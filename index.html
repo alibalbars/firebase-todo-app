@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,14 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>Document</title>
+    <title>Hava Durumu</title>
 
     <style>
-    
-        .benim-inputum{
-            border : 2px solid blue;
+        .benim-inputum {
+            border: 2px solid blue;
         }
-
     </style>
     <link rel="shortcut icon" href="">
 </head>
@@ -26,20 +23,23 @@
             <div class="col-6">
                 <form>
                     <label for="exampleInputEmail1">Şehir</label>
-                    <input id="havadurumutext" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="">
-                    <button id="apibutton" style="margin-top : 10px;" type="button" class="btn btn-primary">Hava Durumu</button>
+                    <input id="havadurumutext" type="text" class="form-control" id="exampleInputEmail1"
+                        aria-describedby="emailHelp" placeholder="Şehir adı">
+                    <button id="apibutton" style="margin-top : 10px;" type="button" class="btn btn-primary">Hava
+                        durumu</button>
                 </form>
             </div>
             <div class="col-6">
-                    <label id="lbl_con" style="color:red" ><i>İnternet bağlantısı yok!</i></label>
-                    <div style="display: inline-block">
-                        <label id="lbl_out1" style="font-weight:bold">Merhaba</label>
-                    </div>
-                    <div style="display: inline-block;">
-                        <img id="flag_turkey" width="30" height="30" alt="flag-turkey" src="https://i.hizliresim.com/anLZER.jpg">
-                    </div>
-                    
+                <label id="lbl_con" style="color:red"><i>İnternet bağlantısı yok!</i></label>
+                <label id="lbl_error" style="color:red"><i>Geçersiz şehir adı!</i></label>
+                <div style="display: inline-block">
+                    <label id="lbl_out1" style="font-weight:bold">Merhaba</label>
+                </div>
+                <div style="display: inline-block;">
+                    <img id="flag_turkey" width="30" height="30" alt="flag-turkey"
+                        src="https://i.hizliresim.com/anLZER.jpg">
+                </div>
+
                 <label id="lbl_out2" style="font-weight:bold;display: block;">Merhaba</label>
             </div>
         </div>
@@ -63,4 +63,3 @@
 </body>
 
 </html>
-      
