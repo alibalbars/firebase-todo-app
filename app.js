@@ -12,7 +12,7 @@ document.querySelector('#apibutton').addEventListener('click',function(){
         document.getElementById("lbl_con").style.display='block';
     }else{
         var havadurumu_text = document.querySelector('#havadurumutext').value;
-    var apiAdres = 'http://api.openweathermap.org/data/2.5/weather?q='+ havadurumu_text +'&APPID=6ba3cc27ff26cfb1f436bdf90d7bf032&units=metric'
+    var apiAdres = 'https://api.openweathermap.org/data/2.5/weather?q='+ havadurumu_text +'&APPID=6ba3cc27ff26cfb1f436bdf90d7bf032&units=metric'
     //console.log(apiAdres);
     
     const connect = new XMLHttpRequest();
