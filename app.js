@@ -12,7 +12,7 @@ document.querySelector('input[type="text"]').addEventListener('keyup', function(
         action();
         console.log('yenilendi');
     }
-});,
+});
     
 function action() {
     var online = navigator.onLine;
