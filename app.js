@@ -5,7 +5,15 @@ document.getElementById("lbl_error").style.display = 'none';
 document.getElementById("flag_turkey").style.display = 'none';
 
 
-document.querySelector('#apibutton').addEventListener('click', function () {
+document.querySelector('#apibutton').addEventListener('click', action());
+
+document.querySelector('input[type="text"]').addEventListener('keyup', function(event){
+    if(event.key === 'Enter'){
+        action();
+    }
+});,
+    
+function action() {
     var online = navigator.onLine;
     if (!online) { // internet yoksa
         document.getElementById("lbl_out1").style.display = 'none';
@@ -58,9 +66,5 @@ document.querySelector('#apibutton').addEventListener('click', function () {
             }
         }
         connect.send();
-
-
     }
-
-
-})
+}
