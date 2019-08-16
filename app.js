@@ -7,7 +7,7 @@ document.getElementById("flag_turkey").style.display = 'none';
 
 document.querySelector('#apibutton').addEventListener('click', action());
 
-document.querySelector('input[type="text"]').addEventListener('keyup', function(event){
+document.querySelector('#havadurumutext').addEventListener('keyup', function(event){
     if(event.key === 'Enter'){
         action();
         console.log('yenilendi');
