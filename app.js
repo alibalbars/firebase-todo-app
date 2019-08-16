@@ -10,6 +10,7 @@ document.querySelector('#apibutton').addEventListener('click', action());
 document.querySelector('input[type="text"]').addEventListener('keyup', function(event){
     if(event.key === 'Enter'){
         action();
+        console.log('yenilendi');
     }
 });,
     
