@@ -5,7 +5,7 @@ document.getElementById("lbl_error").style.display = 'none';
 document.getElementById("flag_turkey").style.display = 'none';
 
 
-document.querySelector('#apibutton').addEventListener('click', action());
+document.querySelector('#apibutton').addEventListener('click', action);
 
 document.querySelector('#havadurumutext').addEventListener('keyup', function(event){
     if(event.key === 'Enter'){
