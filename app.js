@@ -30,7 +30,7 @@ function action() {
             document.getElementById("lbl_out2").style.display = 'none';
             document.getElementById("flag_turkey").style.display = 'none';
         }
-        var apiAdres = 'https://api.openweathermap.org/data/2.5/weather?q=' + havadurumu_text + '&APPID=6ba3cc27ff26cfb1f436bdf90d7bf032&units=metric'
+        var apiAdres = 'https://api.openweathermap.org/data/2.5/weather?q=' + havadurumu_text + '&APPID=6ba3cc27ff26cfb1f436bdf90d7bf032&units=metric&lang=tr'
 
         const connect = new XMLHttpRequest();
         connect.open("GET", apiAdres);
