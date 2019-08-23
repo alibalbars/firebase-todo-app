@@ -22,13 +22,13 @@ header > h1{
     left: 0px;
     top: 55px; 
     z-index: 2;
-    /* animation: headerAnimation 2s both; */
+    animation: headerAnimation 2s both;
 }
 
 .image{
     z-index: 1;
     position: relative;
-    /* animation: headerImageAnimation 1s; */
+    animation: headerImageAnimation 1s;
 }
 
 section{
