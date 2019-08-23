@@ -5,60 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Hava Durumu</title>
-
-    <style>
-        .benim-inputum {
-            border: 2px solid blue;
-        }
-    </style>
-    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon"
+        href="https://github.com/alibalbars/alibalbars.github.io/blob/master/icon_weather_new.png?raw=true">
 </head>
 
-<body>
-    <div class="container">
-        <div class="row" style="margin-top : 50px;">
-            <div class="col-6">
-                <form>
-                    <label for="exampleInputEmail1">Şehir</label>
-                    <input id="havadurumutext" type="text" class="form-control" id="exampleInputEmail1"
-                        aria-describedby="emailHelp" placeholder="Şehir adı">
-                    <button id="apibutton" style="margin-top : 10px;" type="button" class="btn btn-primary">Hava
-                        durumu</button>
-                </form>
-            </div>
-            <div class="col-6">
-                <label id="lbl_con" style="color:red"><i>İnternet bağlantısı yok!</i></label>
-                <label id="lbl_error" style="color:red"><i>Geçersiz şehir adı!</i></label>
-                <div style="display: inline-block">
-                    <label id="lbl_out1" style="font-weight:bold">Merhaba</label>
-                </div>
-                <div style="display: inline-block;">
-                    <img id="flag_turkey" width="30" height="30" alt="flag-turkey"
-                        src="https://i.hizliresim.com/anLZER.jpg">
-                </div>
 
-                <label id="lbl_out2" style="font-weight:bold;display: block;">Merhaba</label>
+<body>
+    <header id="header">
+        <img id = "headerImage" class="image" src="https://github.com/alibalbars/alibalbars.github.io/blob/master/icon_weather_new.png?raw=true"
+            alt="weather-icon" width="100px" height="100px" onload="imageLoad()">
+        <h1>Hava Durumu</h1>
+    </header>
+
+    <section>
+        <div id="divInput" style="margin:0px;">
+            <input id="inputPlace" type="text" placeholder="Şehir yada İlçe">
+            <button id="btnTamam">Tamam</button>
+        </div>
+
+        <div id="divResult1" style="padding: 10px;position: absolute;z-index: 2;visibility: hidden;">
+            <div style="border:solid red 1px;">
+                <p id="infoPlace" style="display: inline-block;transform: translateY(-50%);">Şehir, ülke</p>
+                <img id="imgFlag" src="https://www.countryflags.io/tr/shiny/64.png" width="30" height="30">
+            </div>
+            <hr style="margin: 0px 0px 10px 0px;">
+            <div style="border:solid blue 1px;font-size: 18px">
+                <p id="infoWeather1" style="display: inline-block;">Bilgiler</p>
+                <img id="imgWeather" style=" background-color: rgb(200, 200, 200);border-radius: 50%;" 
+                src="http://openweathermap.org/img/wn/10d@2x.png" width="70" height="70">
             </div>
         </div>
-    </div>
 
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-
+        <div id="divResult2">
+            
+        </div>
+        <div class="loader"></div>
+    </section>
+    
     <script src="/app.js"></script>
 </body>
 
