@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
     var firebaseConfig = {
         apiKey: "AIzaSyByof-1QMTRVIaj7PjNpb4mUurxAoIjJEI",
         authDomain: "fir-todo-app-77492.firebaseapp.com",
@@ -24,11 +25,11 @@ $(document).ready(function () {
                     .then(function () {
                         window.location.href = "main.html";
                     })
-                alert(msg);
+
+            }).catch(function (error) {
+                alert(error.message);
             })
 
-    }).catch(function (error) {
-        alert(error.message);
     })
 
 })
