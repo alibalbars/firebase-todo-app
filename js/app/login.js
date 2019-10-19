@@ -20,7 +20,7 @@ $(document).ready(function () {
         //bu bir promise, bu yüzden then ve catch ile kullanılır.
         firebase.auth().signInWithEmailAndPassword(email, password)
             .then(function () {
-                window.location.href = "index.html";
+                window.location.href = "main.html";
             }).catch(function (error) {
                 var msg = "";
                 switch (error.message) {
