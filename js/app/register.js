@@ -22,7 +22,7 @@ $(document).ready(function () {
 
                 firebase.auth().signInWithEmailAndPassword(email, password)
                     .then(function () {
-                        window.location.href = "index.html";
+                        window.location.href = "main.html";
                     })
                 alert(msg);
             })
